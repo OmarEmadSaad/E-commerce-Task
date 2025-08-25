@@ -62,11 +62,10 @@ const CartSidebar: React.FC = () => {
 
       <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-xl z-50 transform transition-transform">
         <div className="flex flex-col h-full">
-          {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200">
             <h2 className="text-lg font-semibold text-gray-900 flex items-center">
               <ShoppingBag className="w-5 h-5 mr-2" />
-              Shopping Cart ({itemCount})
+              Shopping Cart ({items.length})
             </h2>
             <button
               onClick={handleClose}
